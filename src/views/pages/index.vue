@@ -38,13 +38,13 @@ const newSlide = ref([Navigation])
                 class="mySwiper"
               >
                 <swiper-slide>
-                    <a href="#"><img src="@/assets/images/banner/01.jfif" alt="" /></a>
+                    <a href="#" style="display:block"><img style="max-width:100%; width:100%" src="@/assets/images/banner/01.jfif" alt="" /></a>
                 </swiper-slide>
                 <swiper-slide>
-                    <a href="#"><img src="@/assets/images/banner/02.jfif" alt="" /></a>
+                    <a href="#" style="display:block"><img style="max-width:100%; width:100%" src="@/assets/images/banner/02.jfif" alt="" /></a>
                 </swiper-slide>
                 <swiper-slide>
-                    <a href="#"><img src="@/assets/images/banner/03.jfif" alt="" /></a>
+                    <a href="#" style="display:block"><img style="max-width:100%; width:100%" src="@/assets/images/banner/03.jfif" alt="" /></a>
                 </swiper-slide>
               </swiper>
             </div>
@@ -224,14 +224,13 @@ const newSlide = ref([Navigation])
                   <label class="label-text sale">sale</label>
                 </div>
                 <button class="product-wish wish">
-                  <i class="fas fa-heart"></i></button
-                ><a class="product-image" href="product-video.html"
+                  <i class="fas fa-heart"></i></button><router-link :to="{name: 'product.details'}" class="product-image" href="product-video.html"
                   ><img src="@/assets/images/product/01.jpg" alt="product"
-                /></a>
+                /></router-link>
               </div>
               <div class="product-content">
                 <h6 class="product-name">
-                  <a href="product-video.html">Products Name</a>
+                  <router-link :to="{name: 'product.details'}" >Products Name</router-link>
                 </h6>
                 <h6 class="product-price">
                   <del>$34</del><span>$28<small></small></span>
@@ -252,7 +251,7 @@ const newSlide = ref([Navigation])
                 </div>
                 <button class="product-wish wish">
                   <i class="fas fa-heart"></i></button
-                ><a class="product-image" href="product-video.html"
+                ><a class="product-image" 
                   ><img src="@/assets/images/product/03.jpg" alt="product"
                 /></a>
               </div>
